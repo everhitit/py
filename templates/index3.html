@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Swith Control</title>
+    <!-- 1초단위로 웹페이지 업데이트 -->
+    <meta http-equiv="refresh" content="1">
+</head>
+<body>
+    
+    <h1>라즈베리파이의 스위치 눌림여부 웹사이트에 전달</h1>
+    <hr>
+
+    <div style="padding-left:20px;"></div>
+        <h3>스위치상태</h3>
+        <p style="color:red">
+            <b>
+                <!-- Jinja 방식의 코드-->
+                스위치: {% if sw_state_list[0]!=0 %} 켜짐
+                        {% elif sw_state_list[0]==0 %} 꺼짐
+                        {% endif %}
+            </b>
+        </p>
+</body>
+</html>

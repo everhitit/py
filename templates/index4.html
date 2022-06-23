@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LED Thread Controller</title>
+</head>
+<body>
+    <h1> LED WEB 2</h1>
+
+    <div style="padding-left:20px;">
+        <h3> LED Control</h3>
+        <p style="color: red;">
+            <b> Red LED</b>
+            <a href="{{ url_for('LED_control', color= 'red', state =1)}}">
+                <input type="button" value="ON">
+            </a>
+
+            <a href="{{ url_for('LED_on_3_sec', color= 'red')}}">
+                <input type="button" value="3 sec">
+            </a>
+            
+            <a href="{{ url_for('LED_control', color= 'red', state =0)}}">
+                <input type="button" value="OFF">
+            </a>
+
+        </p>
+
+
+    </div>
+
+
+
+</body>
+</html>
